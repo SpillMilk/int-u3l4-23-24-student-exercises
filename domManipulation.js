@@ -22,6 +22,9 @@ let image = document.querySelector('.image');
 //   - The `location` paragraph.
 
 contentButton.addEventListener('click', function() {
+  myName.innerHTML = "Korben Schrader";
+  myHobby.innerHTML = "Spending time with friends and family";
+  myLocation.innerHTML = "Sunnyside, New York";
 
 
 
@@ -32,6 +35,9 @@ contentButton.addEventListener('click', function() {
 
 // 3. Add an event listener to the `image1Button`
 // 4. When clicked, it should change the source of `image` to another image URL.
+image1Button.addEventListener('click', function(){
+  image.src = "https://1.bp.blogspot.com/-o7_1DS_jKuc/XmRmJLiceKI/AAAAAAAAKZY/iQPZI3e0rbcnsr2C-0STajctP0kOy-F-QCLcBGAsYHQ/s1600/Platypus_2.jpg";
+});
 
 
 
@@ -39,7 +45,9 @@ contentButton.addEventListener('click', function() {
 
 // 5. Add an event listener to the `image2Button`
 // 6. When clicked, it should change the source of `image` to another image URL.
-
+image2Button.addEventListener('click', function(){
+  image.src = "https://www.ipswichfirst.com.au/wp-content/uploads/2019/08/shutterstock_1225026040.jpg";
+});
 
 // BONUS
 // 7. Try using different event types for your buttons.
